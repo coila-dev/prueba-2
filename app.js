@@ -4,6 +4,7 @@ const GI = {
 		let element = document
 		return document.createElement(tag)
 	}
+
 }
 
 
@@ -15,3 +16,11 @@ const to_do = [
     'Comprar entradas para el cine',
 ]
 
+
+function crearLista() {
+    to_do.forEach(elemto => {
+        var li = document.getElementById("lst").createElement("li")
+        
+        li.appendChild(document.createTextNode("<input type ='ckeckbox'>elemto[1]<input>"))
+    });
+}
